@@ -1,0 +1,27 @@
+
+// USER
+Workout
+Food
+
+// Workout
+Date
+Exercises
+
+// Exercises
+Name
+Reps
+Sets
+Weight
+
+// Diet
+Date
+Calorie Goal
+Calories Consumed
+Protein Goal
+Protein Consumed
+Food list
+
+// Food
+Name
+Calories
+Protein
