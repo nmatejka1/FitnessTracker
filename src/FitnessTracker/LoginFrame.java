@@ -6,12 +6,10 @@ import java.util.ArrayList;
 
 public class LoginFrame extends JFrame implements ActionListener {
     Container container = getContentPane();
-    private JLabel usernameLabel;
-    private JLabel passwordLabel;
+    private JLabel usernameLabel, passwordLabel;
     private JTextField usernameText;
     private JPasswordField passwordText;
-    private JButton loginButton;
-    private JButton createButton;
+    private JButton loginButton, createButton;
     private JLabel error;
     private ArrayList<User> userList;
 
@@ -31,13 +29,16 @@ public class LoginFrame extends JFrame implements ActionListener {
     public void setInitialValues() {
         usernameLabel = new JLabel("Username");
         passwordLabel = new JLabel("Password");
+        error = new JLabel("");
+
         usernameText = new JTextField(20);
         passwordText = new JPasswordField(20);
+
         loginButton = new JButton("Login");
-        loginButton.addActionListener(this);
         createButton = new JButton("Create Account");
+
+        loginButton.addActionListener(this);
         createButton.addActionListener(this);
-        error = new JLabel("");
     }
 
     public void setLocationAndSize() {

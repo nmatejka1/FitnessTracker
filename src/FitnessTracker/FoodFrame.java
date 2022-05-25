@@ -32,12 +32,15 @@ public class FoodFrame extends JFrame implements ActionListener {
         calorieLabel = new JLabel("Calories");
         proteinLabel = new JLabel("Protien");
         error = new JLabel("");
+
         nameText = new JTextField(20);
         calorieText = new JTextField(20);
         proteinText = new JTextField(20);
+
         submitButton = new JButton("Submit");
-        submitButton.addActionListener(this);
         cancelButton = new JButton("Cancel");
+
+        submitButton.addActionListener(this);
         cancelButton.addActionListener(this);
     }
  
